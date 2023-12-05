@@ -2,8 +2,12 @@ const router = require('express').Router();
 const uuid = require('uuid');
 const db = require('../db/db.json');
 
-router.get('/notes', )
+router.get('/api/notes', (req, res) => {
+    res.json(db);
+});
 
-router.post('/notes')
+router.post('/api/notes', (req, res) => {
+    
+});
 
 module.exports = router;
